@@ -1,0 +1,29 @@
+- name: "varun"
+  dob: "10-05-1994"
+  Adress:
+  - FlatNumber: 105
+    StreetName: "Raghavendra Nagar"
+    city: "siddipet"
+    State: "TG"
+    type: "current"
+  
+  - FlatNumber: 105
+    StreetName: "Raghavendra Nagar"
+    city: "siddipet"
+    State: "TG"
+    type: "permanent"
+
+- name: "varun"
+  dob: "10-05-1994"
+  Adress:
+  - FlatNumber: 105
+    StreetName: "Raghavendra Nagar"
+    city: "siddipet"
+    State: "TG"
+    type: "current"
+  
+  - FlatNumber: 105
+    StreetName: "Raghavendra Nagar"
+    city: "siddipet"
+    State: "TG"
+    type: "permanent"
