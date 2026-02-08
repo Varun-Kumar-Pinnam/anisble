@@ -1,0 +1,15 @@
+- name: task level varaibles
+  hosts:  local
+  connection: local
+  vars_prompt:
+   - name: username
+     prompt:  enter your username
+     private: false
+   - name: password
+     prompt:  enter your password
+     private: false
+     
+  tasks:
+    - name: print the varaibles
+      ansible.builtin.debug:
+       msg: "{{ username }} and  {{ password }}"
