@@ -2,10 +2,10 @@
   hosts:  local
   connection: local
   vars:
-    NAME: "Varun"
-    CITY: "siddipet"
+   NAME: "Varun"
+   CITY: "siddipet"
   tasks:
     - name: print the varaibles
       CITY: "Hyderabad"
       ansible.builtin.debug:
-        msg:  "{{ NAME }} staying in {{ CITY }}"
+       msg: "{{ NAME }} staying in {{ CITY }}"
