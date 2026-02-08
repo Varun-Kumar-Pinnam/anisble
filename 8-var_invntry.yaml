@@ -2,6 +2,6 @@
   hosts:  local
   connection: local
   tasks:
-    - name: print the varaibles
-      ansible.builtin.debug:
-       msg: "{{ NAME }} staying in {{ CITY }}"
+   - name: print the varaibles
+     ansible.builtin.debug:
+      msg: "{{ NAME }} staying in {{ CITY }}"
