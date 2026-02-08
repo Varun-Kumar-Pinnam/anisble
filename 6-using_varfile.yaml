@@ -1,0 +1,11 @@
+- name: task level varaibles
+  hosts:  local
+  connection: local
+  vars_file:
+    var.yaml
+  tasks:
+    - name: print the varaibles
+      vars:
+       CITY: "Hyderabad"
+      ansible.builtin.debug:
+       msg: "{{ NAME }} staying in {{ CITY }}"
