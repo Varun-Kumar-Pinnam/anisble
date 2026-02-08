@@ -1,5 +1,6 @@
 - name: play level varaibles
   hosts:  local
+  connection: local
   vars:
     NAME: varun
     CITY: siddipet
