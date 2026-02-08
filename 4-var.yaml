@@ -1,0 +1,9 @@
+- name: play level varaibles
+  hosts:  local
+  vars:
+    NAME: varun
+    CITY: siddipet
+  tasks:
+    - name: print varaibles
+      ansible.builtin.debug:
+        msg: "{{ NAME }} is staying in {{ CITY}}"
