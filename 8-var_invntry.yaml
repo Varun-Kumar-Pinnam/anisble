@@ -1,4 +1,4 @@
-- name: task level varaibles
+- name: varaibles from inventory
   hosts:  local
   connection: local
   tasks:
