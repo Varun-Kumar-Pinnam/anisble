@@ -14,8 +14,7 @@
     - ansible
   tasks:
   - name: Printing varaibles
-         
-      ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: |
        PROGRAM: {{ PROGRAM }}
        DURATION: {{ DURATION }}
