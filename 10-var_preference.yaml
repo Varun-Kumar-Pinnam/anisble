@@ -1,8 +1,8 @@
 - name: var preference
   hosts: local
   connection: local
-  vars:
-    NAME: Message from play vars
+  # vars:
+  #   NAME: Message from play vars
   # vars_files:
   #   - vars.yaml
   # vars_prompt:
