@@ -3,8 +3,8 @@
   connection: local
   vars:
     NAME: Message from play vars
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
   vars_prompt:
     - name: NAME
       prompt: Enter your name
