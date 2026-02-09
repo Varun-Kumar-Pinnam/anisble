@@ -1,8 +1,7 @@
 - name: varaibles from args
   hosts:  local
-  connections:  local
+  connection:  local
   task:
     - name: print the arg from varaible 
       ansible.builtin.debug:
         msg: "Hi {{ NAME }}, Good morning"
-        
