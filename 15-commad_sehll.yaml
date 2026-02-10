@@ -12,7 +12,7 @@
         msg: "{{ user_output }}"
 
     - name: module test
-      ansible.builtin.command: ls lrt
+      ansible.builtin.command: ls -lrt
       register: list_output
 
     - name: print the output
