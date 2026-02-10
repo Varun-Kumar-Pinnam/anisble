@@ -1,0 +1,8 @@
+- name: command vs shell]
+  hosts:  local
+  connection: local
+  tasks:
+    - name: checking command and shell output
+      ansible.builtin.command: cat /etc/passwd | grep root
+      register: user_output
+      
