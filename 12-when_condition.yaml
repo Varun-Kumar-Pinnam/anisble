@@ -4,7 +4,7 @@
   vars:
     IS-LIVE: true
   tasks:
-    - name: condition check
-      ansible.builtin.debug:
-        msg: "Yes it is"
-      when: IS_LIVE
+  - name: condition check
+    ansible.builtin.debug:
+      msg: "Yes it is"
+    when: IS_LIVE
