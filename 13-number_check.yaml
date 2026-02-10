@@ -1,0 +1,12 @@
+- name: Number check
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: NUMBER
+      prompt: Enter Number
+      private: false
+  tasks:
+    - name: check the Number
+      ansible.builtin.debug:
+        msg: "Given number is greater than 5"
+      when: NUMBER > 5
