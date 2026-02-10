@@ -6,7 +6,7 @@
       prompt: Enter Number
       private: false
   tasks:
-    - name: check the Number
+    - name: print the number
       ansible.builtin.debug:
         msg: "Given number is greater than 5"
       when: NUMBER > 5
