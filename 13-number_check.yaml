@@ -2,11 +2,11 @@
   hosts: local
   connection: local
   vars_prompt:
-    - name: NUMBER
+    - name: NUMBER_IS
       prompt: Enter Number
       private: false
   tasks:
     - name: print the number
       ansible.builtin.debug:
         msg: "Given number is greater than 5"
-      when: NUMBER > 5
+      when: NUMBER_IS > 5
