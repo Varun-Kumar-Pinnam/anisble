@@ -9,7 +9,7 @@
    - name: print the number
      ansible.builtin.debug:
        msg: "Given number is greater than 5"
-     when: NUMBER_IS | int > 5
+     when: NUMBER_IS | int > 5 #vars_prompt always returns a string , so use int to compare the number
 
 
      
