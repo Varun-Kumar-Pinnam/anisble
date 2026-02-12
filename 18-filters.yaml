@@ -22,7 +22,7 @@
         }
     ]
   vars_files:
-    - student_yaml
+    - student.yaml
 
   tasks:
   - name: Filters check 
