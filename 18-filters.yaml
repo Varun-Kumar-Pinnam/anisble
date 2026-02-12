@@ -2,7 +2,11 @@
   hosts: local
   connection: local
   vars:
-    name: linux,ansible,shell,terform
+    topics: linux,ansible,shell,terform
+    tagmaps:
+      project: roboshop
+      cloud: aws
+      status: In dev
   tasks:
   - name: Filters check 
     ansible.builtin.debug:
@@ -10,7 +14,11 @@
     
   - name: converting string to list
     ansible.builtin.debug:
-      msg: "{{ name | split(',') }}"
+      msg: "{{ topics | split(',') }}"
+  
+  - name: convering maps to list
+    ansible.builtin.debug:
+      msg: "{{ tagmaps | dict2items }}"
 
   
 
