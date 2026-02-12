@@ -22,7 +22,7 @@
         }
     ]
   var_files:
-    - file: stundent_yaml
+    - stundent_yaml
 
   tasks:
   - name: Filters check 
