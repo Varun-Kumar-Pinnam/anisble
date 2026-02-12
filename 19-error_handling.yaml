@@ -1,0 +1,6 @@
+- name: Error handling 
+  hosts: local
+  connection: local
+  tasks:
+    ansible.builtin.command: id roboshop
+    register: user_output
