@@ -21,7 +21,7 @@
             "value": "In dev"
         }
     ]
-  vars_file:
+  var_files:
     - file: stundent_yaml
 
   tasks:
