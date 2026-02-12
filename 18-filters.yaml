@@ -22,7 +22,7 @@
         }
     ]
   vars_files:
-    - stundent_yaml
+    - student_yaml
 
   tasks:
   - name: Filters check 
