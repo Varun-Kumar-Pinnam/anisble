@@ -5,9 +5,14 @@
   tasks:
     - name: installing softwares 
       ansible.builtin.package:
-        name: "{{ item }}"
-        state: present
+        # name: "{{ item }}"
+        # state: present
+        name: {{ item.name }}
+        state: {{ item.state }}
       loop:
-      - nginx
-      - mysql
-      - zip
+      # - nginx
+      # - mysql
+      # - zip
+      - {{ name: "nginx", state: "absent" }}
+      - {{ name: "nodejs", state: "present" }}
+      - {{ name: "zip", state: "absent" }}
