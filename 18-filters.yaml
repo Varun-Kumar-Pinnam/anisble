@@ -1,11 +1,17 @@
 - name: Filters
   hosts: local
   connection: local
+  vars:
+    name: linux,ansible,shell,terform
   tasks:
-    - name: Filters check 
-      ansible.builtin.debug:
-        msg: "Hi Varun, {{ Greeting | default('Good Morning') }}"
-  # - name: greeting
-  #   ansible.builtin.debug:
-  #     msg: "Hi Sivakumar, {{ GREETING | default('Good Morning') }}"
+  - name: Filters check 
+    ansible.builtin.debug:
+      msg: "Hi Varun, {{ Greeting | default('Good Morning') }}"
+    
+  - name: converting string to list
+    ansible.builtin.split:
+      msg: "{{ name | split(',') }}"
+
+  
+
       
