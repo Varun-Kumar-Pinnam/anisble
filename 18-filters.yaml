@@ -21,6 +21,8 @@
             "value": "In dev"
         }
     ]
+  vars_file:
+    - name: stundent_yaml
 
   tasks:
   - name: Filters check 
@@ -39,9 +41,9 @@
     ansible.builtin.debug:
       msg: "{{ taglist | items2dict }}"
 
-  - name: read students yaml
-    ansible.builtin.set_fact: #setting the varaible dynamically
-     stundent_yaml: "{{ lookup ( 'file', 'students.yaml') | from_yaml }}"
+  # - name: read students yaml
+  #   ansible.builtin.set_fact: #setting the varaible dynamically
+  #    stundent_yaml: "{{ lookup ( 'file', 'students.yaml') | from_yaml }}"
 
   - name: converting yaml to json 
     ansible.builtin.debug:
