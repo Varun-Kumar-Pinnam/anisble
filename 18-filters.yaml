@@ -7,6 +7,21 @@
       project: roboshop
       cloud: aws
       status: In dev
+    taglist: [
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "cloud",
+            "value": "aws"
+        },
+        {
+            "key": "status",
+            "value": "In dev"
+        }
+    ]
+
   tasks:
   - name: Filters check 
     ansible.builtin.debug:
@@ -19,6 +34,11 @@
   - name: convering maps to list
     ansible.builtin.debug:
       msg: "{{ tagmaps | dict2items }}"
+
+  - name: convering list to maps
+    ansible.builtin.debug:
+      msg: "{{ taglist | itemstodict }}"
+
 
   
 
