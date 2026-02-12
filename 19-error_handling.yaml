@@ -1,6 +1,7 @@
 - name: Error handling 
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: checking the user details
     ansible.builtin.command: id roboshop
