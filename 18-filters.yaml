@@ -9,7 +9,7 @@
       msg: "Hi Varun, {{ Greeting | default('Good Morning') }}"
     
   - name: converting string to list
-    ansible.builtin.split:
+    ansible.builtin.debug:
       msg: "{{ name | split(',') }}"
 
   
