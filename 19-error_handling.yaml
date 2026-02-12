@@ -2,8 +2,11 @@
   hosts: local
   connection: local
   tasks:
+  - name: checking the user details
     ansible.builtin.command: id roboshop
     register: user_output
-    ansible.builtin.debug:
-      msg: "{{ user_output }}"
+
+  # - name: priting the output
+  #   ansible.builtin.debug:
+  #     msg: "{{ user_output }}"
   
