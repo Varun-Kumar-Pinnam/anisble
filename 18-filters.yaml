@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: linux,ansible,shell,terform
+    course: "Devsecops with Ansible"
     tagmaps:
       project: roboshop
       cloud: aws
@@ -31,11 +32,11 @@
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
   
-  - name: convering maps to list
+  - name: converting maps to list
     ansible.builtin.debug:
       msg: "{{ tagmaps | dict2items }}"
 
-  - name: convering list to maps
+  - name: converting list to maps
     ansible.builtin.debug:
       msg: "{{ taglist | items2dict }}"
 
@@ -47,6 +48,13 @@
     ansible.builtin.debug:
       msg: "{{ student_yaml | to_nice_json }}"
 
+  - name: converting to upper case
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
+
+  - name: converting to lower case
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"
 
   
 
