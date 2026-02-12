@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   tasks:
-    # - name: Filters check 
-    #   ansible.builtin.debug:
-    #     msg: "Hi Varun, {{ Greeting | default'(Good Morning)' }}"
-  - name: greeting
-    ansible.builtin.debug:
-      msg: "Hi Sivakumar, {{ GREETING | default('Good Morning') }}"
+    - name: Filters check 
+      ansible.builtin.debug:
+        msg: "Hi Varun, {{ Greeting | default('Good Morning') }}"
+  # - name: greeting
+  #   ansible.builtin.debug:
+  #     msg: "Hi Sivakumar, {{ GREETING | default('Good Morning') }}"
       
