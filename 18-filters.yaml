@@ -37,7 +37,7 @@
 
   - name: convering list to maps
     ansible.builtin.debug:
-      msg: "{{ taglist | itemstodict }}"
+      msg: "{{ taglist | items2dict }}"
 
 
   
