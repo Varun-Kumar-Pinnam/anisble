@@ -4,7 +4,7 @@
   vars:
     topics: linux,ansible,shell,terform
     course: "Devsecops with Ansible"
-    myip: 300.1.34.500
+    myip: 192.1.34.1
     tagmaps:
       project: roboshop
       cloud: aws
