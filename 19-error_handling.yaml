@@ -5,6 +5,7 @@
   - name: checking the user details
     ansible.builtin.command: id roboshop
     register: user_output
+    ignore_erros: true
 
   - name: priting the output
     ansible.builtin.debug:
