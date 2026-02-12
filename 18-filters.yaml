@@ -39,6 +39,14 @@
     ansible.builtin.debug:
       msg: "{{ taglist | items2dict }}"
 
+  - name: read students yaml
+    ansible.builtin.set_fact: #setting the varaible dynamically
+     stundent_yaml: "{{ lookup ( file, stundents.yaml) | from_yaml }}"
+
+  - name: converting yaml to json 
+    ansible.builtin.debug:
+      msg: "{{ stundent_yaml | to_nice_json }}"
+
 
   
 
