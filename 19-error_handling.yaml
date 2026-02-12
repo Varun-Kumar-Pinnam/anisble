@@ -4,3 +4,6 @@
   tasks:
     ansible.builtin.command: id roboshop
     register: user_output
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"
+  
