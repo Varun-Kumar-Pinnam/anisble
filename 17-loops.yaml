@@ -13,6 +13,6 @@
       # - nginx
       # - mysql
       # - zip
-      - {{ name: "nginx", state: "absent" }}
-      - {{ name: "nodejs", state: "present" }}
-      - {{ name: "zip", state: "absent" }}
+      - { name: "nginx", state: "absent" }
+      - { name: "nodejs", state: "present" }
+      - { name: "zip", state: "absent" }
